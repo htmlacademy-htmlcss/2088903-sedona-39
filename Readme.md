@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Dima Krasnov](https://up.htmlacademy.ru/htmlcss/39/user/2088903).
-* Наставник: `Неизвестно`.
+* Наставник: [Дарья Шестерина](https://htmlacademy.ru/profile/id221124).
 
 ---
 
