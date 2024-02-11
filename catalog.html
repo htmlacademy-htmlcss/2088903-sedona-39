@@ -9,7 +9,7 @@
   <body>
     <!-- Header -->
     <header class="page-header" data-test="header">
-      <a class="logo">
+      <a class="logo" href="index.html">
         <img class="logo" src="#" alt="Логотип города Седона.">
       </a>
       <nav class="nav">
@@ -24,22 +24,23 @@
             <a class="nav-link">Гостиницы</a>
           </li>
         </ul>
-        <ul class="nav-list nav-cta">
-          <li class="nav-item">
+        <ul class="nav-user-list">
+          <li class="nav-user-item">
             <a class="nav-link" href="#">
               <span class="visually-hidden">
                 Поиск.
               </span>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <li class="nav-user-item">
+            <a class="nav-link" href="#">
               <span class="visually-hidden">
-                Корзина.
+                В избранном.
               </span>
+              <span class="in-favorites">12</span>
             </a>
           </li>
-          <li class="nav-item nav-btn">
+          <li class="nav-user-item nav-btn">
             <button class="nav-bnt btn btn-primary btn-small">Хочу сюда!</button>
           </li>
         </ul>
@@ -117,28 +118,27 @@
       </header>
       <!-- Section Catalog -->
       <section class="catalog" data-test="catalog">
-        <h2 class="visually-hidden">Список гостиниц</h2>
         <header class="catalog-header">
-          <p class="catalog-title">Найдено гостиниц: <span>38</span></p>
+          <h2 class="catalog-title">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap" selected>Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
-          <ul class="view-buttons">
-            <li class="view-buttons-item">
-              <a class="view-buttons-link" href="#">
-                <img class="view-buttons-icon" src="#" alt="Вид плиткой.">
+          <ul class="view-modes">
+            <li class="view-mode view-mode-selected">
+              <a class="view-mode-link" href="#">
+                <img class="view-buttons-icon" src="#" alt="Плиткой.">
               </a>
             </li>
-            <li class="view-buttons-item">
-              <a class="view-buttons-link" href="#">
-                <img class="view-buttons-icon" src="#" alt="Вид карточками.">
+            <li class="view-mode">
+              <a class="view-mode-link" href="#">
+                <img class="view-mode-icon" src="#" alt="По одной.">
               </a>
             </li>
-            <li class="view-buttons-item">
-              <a class="view-buttons-link" href="#">
-                <img class="view-buttons-icon" src="#" alt="Вид списком.">
+            <li class="view-mode">
+              <a class="view-mode-link" href="#">
+                <img class="view-mode-icon" src="#" alt="Списком.">
               </a>
             </li>
           </ul>
@@ -155,7 +155,7 @@
               <a class="product-card-detail btn btn-primary btn-small" href="#">Подробнее</a>
               <button class="product-card-to-favorite-btn btn btn-secondary btn-small" href="#">В избранное</button>
               <p class="product-card-stars 4-stars">
-                <span class="visually-hidden">Четыре звезды.</span>
+                <span class="visually-hidden">Гостиница 4 звезды.</span>
               </p>
               <a class="product-card-rating btn btn-rating" href="#">Рейтинг: 8,5</a>
             </div>
@@ -171,7 +171,7 @@
               <a class="product-card-detail btn btn-primary btn-small" href="#">Подробнее</a>
               <button class="product-card-to-favorite-btn btn btn-secondary btn-small" href="#">В избранное</button>
               <p class="product-card-stars 4-stars">
-                <span class="visually-hidden">Четыре звезды.</span>
+                <span class="visually-hidden">Гостиница 4 звезды.</span>
               </p>
               <a class="product-card-rating btn btn-rating" href="#">Рейтинг: 9,2</a>
             </div>
@@ -187,7 +187,7 @@
               <a class="product-card-detail btn btn-primary btn-small" href="#">Подробнее</a>
               <button class="product-card-to-favorite-btn btn btn-success btn-small" href="#">В избранном</button>
               <p class="product-card-stars 3-stars">
-                <span class="visually-hidden">Три звезды.</span>
+                <span class="visually-hidden">Гостиница 3 звезды.</span>
               </p>
               <a class="product-card-rating btn btn-rating" href="#">Рейтинг: 6,9</a>
             </div>
@@ -203,7 +203,7 @@
               <a class="product-card-detail btn btn-primary btn-small" href="#">Подробнее</a>
               <button class="product-card-to-favorite-btn btn btn-secondary btn-small" href="#">В избранное</button>
               <p class="product-card-stars 2-stars">
-                <span class="visually-hidden">Две звезды.</span>
+                <span class="visually-hidden">Гостиница 2 звезды.</span>
               </p>
               <a class="product-card-rating btn btn-rating" href="#">Рейтинг: 5,0</a>
             </div>
@@ -250,7 +250,7 @@
       </section>
       <!-- Footer -->
       <footer class="page-footer" data-test="footer">
-        <ul class="footer-social social-list">
+        <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Vkontakte.</span>
@@ -268,10 +268,10 @@
           </li>
         </ul>
         <address>
-          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
-        <a class="footer-logo" href="https://htmlacademy.ru/">
-          <img class="footer-logo-img" src="" alt="Логотип «HTML Academy».">
+        <a class="author-logo" href="https://htmlacademy.ru/">
+          <img class="author-logo-img" src="" alt="Логотип «HTML Academy».">
         </a>
       </footer>
     </main>

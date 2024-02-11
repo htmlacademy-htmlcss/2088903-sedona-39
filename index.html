@@ -10,7 +10,7 @@
     <!-- Header -->
     <header class="page-header" data-test="header">
       <a class="logo">
-        <img class="logo" src="#" alt="Логотип города Седона.">
+        <img class="logo" src="#" alt="Логотип города Седона." aria-current="page">
       </a>
       <nav class="nav">
         <ul class="nav-list">
@@ -24,22 +24,23 @@
             <a class="nav-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="nav-list nav-cta">
-          <li class="nav-item">
+        <ul class="nav-user-list">
+          <li class="nav-user-item">
             <a class="nav-link" href="#">
               <span class="visually-hidden">
                 Поиск.
               </span>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <li class="nav-user-item">
+            <a class="nav-link" href="#">
               <span class="visually-hidden">
-                Корзина.
+                В избранном.
               </span>
+              <span class="in-favorites">12</span>
             </a>
           </li>
-          <li class="nav-item nav-btn">
+          <li class="nav-user-item nav-btn">
             <button class="nav-bnt btn btn-primary btn-small">Хочу сюда!</button>
           </li>
         </ul>
@@ -98,10 +99,9 @@
       <!-- Section Services -->
       <section class="services">
         <header class="services-header section-header">
-          <h2 class="visually-hidden">Услуги.</h2>
-          <p class="services-title h2-title">
+          <h2 class="services-title h2-title">
             Приезжайте в Седону отдохнуть в комфорте и уюте!
-          </p>
+          </h2>
           <p class="services-description text-basic">
             Опытный персонал и качественное обслуживание!
           </p>
@@ -146,16 +146,15 @@
       <!-- Section Subscribe -->
       <section class="subscribe" data-test="subscribe">\
         <header class="subscribe-header section-header">
-          <h2 class="visually-hidden">Подписка на рассылку.</h2>
-          <p class="search-hotels-title h2-title">
+          <h2 class="search-hotels-title h2-title">
             Подпишитесь на рассылку
-          </p>
+          </h2>
           <p class="search-hotels-description text-basic">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
         </header>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="subscribe-email">Дата</label>
+          <label class="visually-hidden" for="subscribe-email">Укажите ваш e-mail</label>
           <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email"
             placeholder="Ваш e-mail">
           <button class="subscribe-btn btn" type="submit">Подписаться</button>
@@ -163,7 +162,7 @@
       </section>
       <!-- Footer -->
       <footer class="page-footer" data-test="footer">
-        <ul class="footer-social social-list">
+        <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Vkontakte.</span>
@@ -181,10 +180,10 @@
           </li>
         </ul>
         <address>
-          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
-        <a class="footer-logo" href="https://htmlacademy.ru/">
-          <img class="footer-logo-img" src="" alt="Логотип «HTML Academy».">
+        <a class="author-logo" href="https://htmlacademy.ru/">
+          <img class="author-logo-img" src="" alt="Логотип «HTML Academy».">
         </a>
       </footer>
     </main>
