@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.btn {
+  padding: 8px 50px;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.btn-primary{
+  background-color: #756157;
+}
+
+.btn-secondary {
+  background-color: #82B3D3;
+}
+
+.btn-success {
+  background-color: #7DB54F;
+}
+
+.btn-large {
+  line-height: 36px;
+}
+
+.h2-title, .h3-title {
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.h1-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.h2-title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.h3-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.h2-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* Header */
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+.page-header li {
+  list-style-type: none;
+}
+.page-header a {
+  text-decoration: none;
+}
+
+
+.nav-link {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.nav-btn {
+  padding: 8px 34px;
+}
+
+/* Main */
+.main-index {
+  text-align: center;
+}
+
+.main-index li,
+.main-inner li {
+  list-style-type: none;
+}
+
+.main-index a,
+.main-inner a {
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  background-color: #ffffff;
+  background-image: url("../images/hero-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/* Advantages */
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item.item-with-img {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.item-with-img .h3-title {
+  color: #ffffff;
+}
+
+/* Services */
+.services-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* Subscribe */
+.subscribe-index {
+  background-image: url("../images/subscribe-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.subscribe-index .h2-title {
+  color: #ffffff;
+}
+
+.subscribe-btn {
+  border-radius: 0 4px 4px 0;
+}
+
+/* Footer */
+.phone {
+  font-size: 40px;
+  font-style: normal;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 1);
+}
+
+/* Filter */
+.header-inner {
+  background-image: url("../images/catalog-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.breadcrumbs-link {
+  color: #ffffff;
+}
+
+.btn-reset {
+  background-color: transparent;
+}
+/* Catalog List */
+.catalog .btn {
+  display: inline-block;
+  width: 140px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+.product-card-link {
+  color: #000000;
+}
+
+.product-card-rating {
+  color: #333333;
+  font-weight: 400;
+  background-color: #F2F2F2;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  gap: 8px;
+}
+.pagination-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+
+}
+
+.pagination-link {
+  color: #ffffff;
+}
+.pagination-item-current .pagination-link {
+  color: #000000;
+}
+
+.pagination-item-current,
+.pagination-item-more {
+  background-color: #F2F2F2;
+}
