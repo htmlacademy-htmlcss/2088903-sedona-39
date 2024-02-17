@@ -10,120 +10,125 @@
   <body>
     <!-- Header -->
     <header class="page-header" data-test="header">
-      <a class="logo" href="index.html">
-        <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
-      </a>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">О седоне</a>
-          </li>
-          <li class="nav-item nav-active">
-            <a class="nav-link">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="nav-user-list">
-          <li class="nav-user-item">
-            <a class="nav-link" href="#">
-              <span class="visually-hidden">
-                Поиск.
-              </span>
-            </a>
-          </li>
-          <li class="nav-user-item">
-            <a class="nav-link" href="#">
-              <span class="visually-hidden">
-                В избранном.
-              </span>
-              <span class="in-favorites">12</span>
-            </a>
-          </li>
-          <li class="nav-user-item">
-            <button class="nav-btn btn btn-primary">Хочу сюда!</button>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <a class="logo" href="index.html">
+          <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона.">
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О седоне</a>
+            </li>
+            <li class="nav-item nav-active">
+              <a class="nav-link">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="nav-user-list">
+            <li class="nav-user-item">
+              <a class="nav-link" href="#">
+                <span class="visually-hidden">
+                  Поиск.
+                </span>
+              </a>
+            </li>
+            <li class="nav-user-item">
+              <a class="nav-link" href="#">
+                <span class="visually-hidden">
+                  В избранном.
+                </span>
+                <span class="in-favorites">12</span>
+              </a>
+            </li>
+            <li class="nav-user-item">
+              <button class="nav-btn btn btn-primary">Хочу сюда!</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-inner">
       <!-- Section Filter -->
       <header class="header-inner" data-test="filter">
-        <h1 class="header-inner-title h1-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
-        <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="filter-group">
-            <legend class="filter-title">Инфраструктура:</legend>
-            <ul class="filter-list">
-              <li class="filter-item">
-                <label class="checkbox">
-                  <input class="checkbox-input" type="checkbox" name="pool" checked>
-                  <span class="checkbox-label">Бассейн</span>
-                </label>
-              </li>
-              <li class="filter-item">
-                <label class="checkbox">
-                  <input class="checkbox-input" type="checkbox" name="parking" checked>
-                  <span class="checkbox-label">Парковка</span>
-                </label>
-              </li>
-              <li class="filter-item">
-                <label class="checkbox">
-                  <input class="checkbox-input" type="checkbox" name="wi-fi">
-                  <span class="checkbox-label">Wi-Fi</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+        <div class="container-inner">
+          <h1 class="header-inner-title h1-title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+          <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="filter-group">
+              <legend class="filter-title">Инфраструктура:</legend>
+              <ul class="filter-list">
+                <li class="filter-item">
+                  <label class="checkbox">
+                    <input class="checkbox-input" type="checkbox" name="pool" checked>
+                    <span class="checkbox-label">Бассейн</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="checkbox">
+                    <input class="checkbox-input" type="checkbox" name="parking" checked>
+                    <span class="checkbox-label">Парковка</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="checkbox">
+                    <input class="checkbox-input" type="checkbox" name="wi-fi">
+                    <span class="checkbox-label">Wi-Fi</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="filter-group">
-            <legend class="filter-title">Тип жилья</legend>
-            <ul class="filter-list">
-              <li class="filter-item">
-                <label class="radio">
-                  <input class="radio-input" type="radio" name="accommodation" value="hotel" checked>
-                  <span class="radio-label">Гостиница</span>
-                </label>
-              </li>
-              <li class="filter-item">
-                <label class="radio">
-                  <input class="radio-input" type="radio" name="accommodation" value="motel">
-                  <span class="radio-label">Мотель</span>
-                </label>
-              </li>
-              <li class="filter-item">
-                <label class="radio">
-                  <input class="radio-input" type="radio" name="accommodation" value="apartments">
-                  <span class="radio-label">Аппартаменты</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="filter-group">
-            <legend class="filter-title">Стоимость, ₽</legend>
-            <label class="range">
-              От
-              <input class="range-input" type="number" name="min-price" value="0" placeholder="0">
-              <span class="visually-hidden">Минимальная цена</span>
-            </label>
-            <label class="range">
-              До
-              <input class="range-input" type="number" name="max-price" value="9000" placeholder="9000">
-              <span class="visually-hidden">Максимальная цена</span>
-            </label>
-          </fieldset>
-
-          <button class="filter-btn btn btn-secondary" type="submit">Применить</button>
-          <button class="filter-btn btn btn-reset" type="reset">Сбросить</button>
-        </form>
+            <fieldset class="filter-group">
+              <legend class="filter-title">Тип жилья</legend>
+              <ul class="filter-list">
+                <li class="filter-item">
+                  <label class="radio">
+                    <input class="radio-input" type="radio" name="accommodation" value="hotel" checked>
+                    <span class="radio-label">Гостиница</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="radio">
+                    <input class="radio-input" type="radio" name="accommodation" value="motel">
+                    <span class="radio-label">Мотель</span>
+                  </label>
+                </li>
+                <li class="filter-item">
+                  <label class="radio">
+                    <input class="radio-input" type="radio" name="accommodation" value="apartments">
+                    <span class="radio-label">Аппартаменты</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-group">
+              <legend class="filter-title">Стоимость, ₽</legend>
+              <label class="range">
+                От
+                <input class="range-input" type="number" name="min-price" value="0" placeholder="0">
+                <span class="visually-hidden">Минимальная цена</span>
+              </label>
+              <label class="range">
+                До
+                <input class="range-input" type="number" name="max-price" value="9000" placeholder="9000">
+                <span class="visually-hidden">Максимальная цена</span>
+              </label>
+            </fieldset>
+            <div class="filter-btn-container">
+              <button class="filter-btn btn btn-secondary" type="submit">Применить</button>
+              <button class="filter-btn btn btn-reset" type="reset">Сбросить</button>
+            </div>
+          </form>
+        </div>
       </header>
       <!-- Section Catalog -->
       <section class="catalog" data-test="catalog">
@@ -248,10 +253,10 @@
       <!-- Section Subscribe -->
       <section class="subscribe" data-test="subscribe">
         <header class="subscribe-header section-header">
-          <h2 class="search-hotels-title h2-title">
+          <h2 class="subscribe-title h2-title">
             Подпишитесь на рассылку
           </h2>
-          <p class="search-hotels-description h2-description">
+          <p class="subscribe-description h2-description">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
         </header>

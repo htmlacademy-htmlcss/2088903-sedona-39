@@ -10,43 +10,45 @@
   <body>
     <!-- Header -->
     <header class="page-header" data-test="header">
-      <a class="logo">
-        <img class="logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона."
-          aria-current="page">
-      </a>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item nav-active">
-            <a class="nav-link">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">О седоне</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="nav-user-list">
-          <li class="nav-user-item">
-            <a class="nav-link" href="#">
-              <span class="visually-hidden">
-                Поиск.
-              </span>
-            </a>
-          </li>
-          <li class="nav-user-item">
-            <a class="nav-link" href="#">
-              <span class="visually-hidden">
-                В избранном.
-              </span>
-              <span class="in-favorites">12</span>
-            </a>
-          </li>
-          <li class="nav-user-item">
-            <button class="nav-btn btn btn-primary">Хочу сюда!</button>
-          </li>
-        </ul>
-      </nav>
+      <div class="container">
+        <a class="logo">
+          <img class="logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона."
+            aria-current="page">
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item nav-active">
+              <a class="nav-link">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">О седоне</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="nav-user-list">
+            <li class="nav-user-item">
+              <a class="nav-link" href="#">
+                <span class="visually-hidden">
+                  Поиск.
+                </span>
+              </a>
+            </li>
+            <li class="nav-user-item">
+              <a class="nav-link" href="#">
+                <span class="visually-hidden">
+                  В избранном.
+                </span>
+                <span class="in-favorites">12</span>
+              </a>
+            </li>
+            <li class="nav-user-item">
+              <button class="nav-btn btn btn-primary">Хочу сюда!</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main-index" data-test="main">
       <h1 class="visually-hidden">Городок Седона</h1>
@@ -147,10 +149,10 @@
       <!-- Section Subscribe -->
       <section class="subscribe subscribe-index" data-test="subscribe">
         <header class="subscribe-header">
-          <h2 class="search-hotels-title h2-title">
+          <h2 class="subscribe-title h2-title">
             Подпишитесь на рассылку
           </h2>
-          <p class="search-hotels-description h2-description">
+          <p class="subscribe-description h2-description">
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
         </header>
@@ -163,29 +165,31 @@
       </section>
       <!-- Footer -->
       <footer class="page-footer" data-test="footer">
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">Vkontakte.</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Telegram.</span>
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Youtube.</span>
-            </a>
-          </li>
-        </ul>
-        <address>
-          <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
-        <a class="author-logo" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">Логотип HTML Academy.</span>
-        </a>
+        <div class="container">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Vkontakte.</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Telegram.</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Youtube.</span>
+              </a>
+            </li>
+          </ul>
+          <address class="phone">
+            <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </address>
+          <a class="author-logo" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Логотип HTML Academy.</span>
+          </a>
+        </div>
       </footer>
     </main>
   </body>
