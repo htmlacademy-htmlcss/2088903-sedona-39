@@ -297,6 +297,11 @@ img {
   color: #ffffff;
 }
 
+.subscribe-inner {
+  background-color: #ffffff;
+  text-align: center;
+}
+
 .subscribe-header {
   padding-top: 96px;
   padding-bottom: 54px;
@@ -354,6 +359,8 @@ img {
 }
 .breadcrumbs {
   display: flex;
+  margin: 0;
+  padding: 8px 0 0;
 }
 
 .breadcrumbs-link {
@@ -362,6 +369,25 @@ img {
 
 .filter {
   display: flex;
+  gap: 30px;
+  padding-top: 32px
+}
+.filter-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.filter-group:nth-child(2) {
+  margin-right: auto;
+}
+.filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.filter-list {
+  margin: 0;
+  padding: 32px 0 0;
 }
 .filter-btn-container {
   display: flex;
@@ -369,11 +395,29 @@ img {
   justify-content: end;
   gap: 32px;
 }
+.range-container {
+  padding-top: 32px;
+}
 
 .btn-reset {
   background-color: transparent;
 }
 /* Catalog List */
+.catalog {
+  background-color: #ffffff;
+}
+.catalog-header {
+  display: flex;
+  padding-top: 50px;
+}
+.catalog-title {
+  margin: 0;
+}
+.catalog-list {
+  margin: 0;
+  padding: 40px 0;
+  border-bottom: 1px solid #E6E6E6;
+}
 .catalog .btn {
   display: inline-block;
   width: 140px;
@@ -396,6 +440,8 @@ img {
 .pagination {
   display: flex;
   gap: 8px;
+  margin: 0;
+  padding: 40px 0 60px;
 }
 .pagination-item {
   display: flex;
