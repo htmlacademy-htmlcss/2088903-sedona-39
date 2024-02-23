@@ -178,11 +178,42 @@ img {
 }
 
 .nav-link {
+  position: relative;
   padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: inherit;
+}
+
+.nav-search {
+  background: url("../images/icons/search.svg");
+  background-position: center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.nav-favorites {
+  background: url("../images/icons/heart.svg");
+  background-position: center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.in-favorites {
+  position: absolute;
+  top: -1px;
+  right: -3px;
+  width: 20px;
+  height: 20px;
+  padding: 5px 0;
+  border-radius: 50%;
+  background: rgba(125, 181, 79, 1);
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 400;
 }
 
 .nav-btn {
@@ -272,12 +303,28 @@ img {
 }
 
 .advantages-card-title {
-  margin-top: 0;
-  margin-bottom: 56px;
+  margin: 0;
+  padding: 0 25px;
 }
 
 .advantages-card-description {
-  margin: 0;
+  position: relative;
+  margin: 56px 0 0;
+}
+
+.advantages-card-description::before {
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 23px);
+  width: 60px;
+  height: 2px;
+  margin-left: -9px;
+  background: rgba(0, 0, 0, 0.3);
+  content: "";
+}
+
+.item-with-img .advantages-card-description::before {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-img {
@@ -316,7 +363,28 @@ img {
   flex-direction: column;
   min-height: 385px;
   flex-basis: 400px;
-  padding: 0 85px;
+  padding: 81px 85px;
+}
+
+.services-card-accomodation {
+  background: url("../images/icons/home.svg");
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.services-card-food {
+  background: url("../images/icons/food.svg");
+  background-size: 74px 70px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.services-card-present {
+  background: url("../images/icons/present.svg");
+  background-size: 64px 76px;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 .services-item:nth-child(odd) {
@@ -324,11 +392,11 @@ img {
 }
 
 .services-card-title {
-  margin: 102px 0 30px;
+  margin: 102px 0 0;
 }
 
 .services-card-description {
-  margin: 0;
+  margin: 30px 0 0;
 }
 
 /* Search */
@@ -400,8 +468,19 @@ img {
 }
 
 .social-item {
+  position: relative;
   min-width: 47px;
   min-height: 40px;
+}
+
+.social-icon,
+.author-logo-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .phone {
@@ -417,6 +496,7 @@ img {
 }
 
 .author-logo {
+  position: relative;
   min-width: 115px;
   min-height: 33px;
 }
