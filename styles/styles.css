@@ -43,6 +43,16 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  gap: 30px;
+}
+
 .page-main {
   flex-grow: 1;
 }
@@ -108,18 +118,6 @@ img {
 .h2-description {
   font-size: 22px;
   line-height: 26px;
-}
-
-.container {
-  max-width: 1060px;
-  display: flex;
-  gap: 30px;
-  margin: 0 auto;
-}
-
-.container-inner {
-  max-width: 1060px;
-  margin: 0 auto;
 }
 
 /* Header */
@@ -226,11 +224,10 @@ img {
 
 .advantages-title {
   margin: 0;
-  padding-bottom: 25px;
 }
 
 .advantages-description {
-  margin: 0;
+  margin: 25px 0 0;
 }
 
 .advantages-list {
@@ -243,14 +240,14 @@ img {
 .advantages-item {
   display: flex;
   flex-basis: 400px;
+  min-height: 385px;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item.item-with-img {
-  flex-basis: 1200px;
-}
-
-.advantages-item {
-  background-color: rgba(131, 179, 211, 0.2);
+  flex-basis: 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .advantages-item:nth-child(even) {
@@ -270,8 +267,8 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  min-height: 385px;
-  padding: 0 85px;
+  height: 100%;
+  padding: 85px;
 }
 
 .advantages-card-title {
@@ -281,6 +278,12 @@ img {
 
 .advantages-card-description {
   margin: 0;
+}
+
+.advantages-img {
+  height: 100%;
+  min-width: calc(100% - 400px);
+  object-fit: cover;
 }
 
 .item-reverse {
@@ -294,15 +297,15 @@ img {
 
 .services-title {
   margin: 0;
-  padding-bottom: 20px;
 }
 
 .services-description {
-  margin: 0;
+  margin: 20px 0 0;
 }
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -329,25 +332,28 @@ img {
 }
 
 /* Search */
-.search-header {
-  padding: 96px 0 54px;
+.search {
+  padding: 96px 0;
 }
 
 .search-title {
   margin: 0;
-  padding-bottom: 54px;
 }
 
 .search-description {
-  margin: 0;
+  margin: 20px 0 0;
 }
 
 .search-btn {
-  margin-bottom: 96px;
+  margin: 54px 0 0;
 }
 
 
 /* Subscribe */
+.subscribe {
+  padding: 96px 104px;
+}
+
 .subscribe-index {
   background-image: url("../images/subscribe-background.jpg");
   background-size: 100% auto;
@@ -364,11 +370,6 @@ img {
   text-align: center;
 }
 
-.subscribe-header {
-  padding-top: 96px;
-  padding-bottom: 54px;
-}
-
 .subscribe-title {
   margin: 0;
 }
@@ -378,7 +379,7 @@ img {
 }
 
 .subscribe-form {
-  padding-bottom: 104px;
+  margin: 54px 0 0;
 }
 
 .subscribe-btn {
@@ -386,7 +387,7 @@ img {
 }
 
 /* Footer */
-.page-footer .container {
+.page-footer {
   padding: 40px 0 30px;
 }
 
@@ -429,7 +430,7 @@ img {
   background-color: #ddebf4;
 }
 
-.header-inner .container-inner {
+.header-inner {
   padding: 35px 0 70px;
 }
 
@@ -439,8 +440,8 @@ img {
 
 .breadcrumbs {
   display: flex;
-  margin: 0;
-  padding: 8px 0 0;
+  margin: 8px 0 0;
+  padding: 0;
 }
 
 .breadcrumbs-link {
@@ -450,7 +451,7 @@ img {
 .filter {
   display: flex;
   gap: 30px;
-  padding-top: 32px
+  margin: 40px 0 0;
 }
 
 .filter-group {
@@ -490,10 +491,14 @@ img {
 }
 
 /* Catalog List */
+.catalog {
+  padding: 50px 0 60px;
+}
+
 .catalog-header {
   display: flex;
   align-items: center;
-  padding-top: 50px;
+  gap: 70px;
 }
 
 .catalog-title {
@@ -504,9 +509,8 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin: 0;
-  padding: 40px 0;
-  border-bottom: 1px solid #E6E6E6;
+  margin: 40px 0 0;
+  padding: 0;
 }
 
 .catalog .btn {
@@ -520,7 +524,7 @@ img {
 .view-modes {
   display: flex;
   gap: 8px;
-  margin-left: 70px;
+  margin: 0;
   padding: 0;
 }
 
@@ -546,7 +550,7 @@ img {
 }
 
 .product-card-title {
-  margin: 16px 0 0;
+  margin: 0;
 }
 .product-card-title.h3-title {
   text-transform: none;
@@ -560,6 +564,10 @@ img {
   color: #000000;
 }
 
+.product-card-text {
+  margin: 0;
+}
+
 .product-card-price {
   justify-self: end;
 }
@@ -571,6 +579,7 @@ img {
 }
 
 .product-card-rating {
+  margin: 0;
   padding: 9px 22px 8px 23px;
   color: #333333;
   font-weight: 400;
@@ -581,11 +590,12 @@ img {
 .pagination {
   display: flex;
   gap: 8px;
-  margin: 0;
-  padding: 40px 0 60px;
+  margin: 40px 0 0;
+  padding: 40px 0 0;
+  border-top: 1px solid #E6E6E6;
 }
 
-.pagination-item {
+.pagination-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -596,18 +606,12 @@ img {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-
-}
-
-.pagination-link {
   color: #ffffff;
 }
-.pagination-item-current .pagination-link {
-  color: #000000;
-}
 
-.pagination-item-current,
-.pagination-item-more {
+.pagination-link-current,
+.pagination-link-more {
+  color: #000000;
   background-color: #F2F2F2;
 }
 

@@ -11,7 +11,7 @@
     <div class="page-container">
       <!-- Header -->
       <header class="page-header" data-test="header">
-        <div class="container">
+        <div class="container container-flex">
           <a class="logo">
             <img class="logo-img" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона."
               aria-current="page">
@@ -83,13 +83,13 @@
             </li>
             <li class="advantages-item">
               <div class="advantages-card">
-                <h3 class="advantages-title h3-title">Красивая дорога</h3>
+                <h3 class="advantages-card-title h3-title">Красивая дорога</h3>
                 <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages-item">
               <div class="advantages-card">
-                <h3 class="advantages-title h3-title">Мало туристов</h3>
+                <h3 class="advantages-card-title h3-title">Мало туристов</h3>
                 <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
@@ -138,27 +138,23 @@
         </section>
         <!-- Section Search Hotels -->
         <section class="search" data-test="search">
-          <header class="search-header">
-            <h2 class="visually-hidden">Поиск гостиницы в Седоне.</h2>
-            <p class="search-title h2-title">
-              Заинтересовались?
-            </p>
-            <p class="search-description h2-description">
-              Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
-            </p>
-          </header>
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне.</h2>
+          <p class="search-title h2-title">
+            Заинтересовались?
+          </p>
+          <p class="search-description h2-description">
+            Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
           <button class="search-btn btn btn-primary btn-large">Поиск гостиницы в Cедоне</button>
         </section>
         <!-- Section Subscribe -->
         <section class="subscribe subscribe-index" data-test="subscribe">
-          <header class="subscribe-header">
-            <h2 class="subscribe-title h2-title">
-              Подпишитесь на рассылку
-            </h2>
-            <p class="subscribe-description h2-description">
-              Только полезная информация и никакого спама, честное бойскаутское!
-            </p>
-          </header>
+          <h2 class="subscribe-title h2-title">
+            Подпишитесь на рассылку
+          </h2>
+          <p class="subscribe-description h2-description">
+            Только полезная информация и никакого спама,<br> честное бойскаутское!
+          </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Укажите ваш e-mail</label>
             <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email"
@@ -169,7 +165,7 @@
       </main>
       <!-- Footer -->
       <footer class="page-footer" data-test="footer">
-        <div class="container">
+        <div class="container container-flex">
           <ul class="social-list">
             <li class="social-item">
               <a class="social-link" href="https://vk.com/htmlacademy">
