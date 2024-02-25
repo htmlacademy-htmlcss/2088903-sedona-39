@@ -324,16 +324,17 @@ img {
 
 .advantages-card-description {
   position: relative;
-  margin: 56px 0 0;
+  margin: 30px 0 0;
+  padding: 30px 0 0;
 }
 
 .advantages-card-description::before {
   position: absolute;
-  top: -30px;
-  left: calc(50% - 23px);
+  top: 0;
+  left: 50%;
   width: 60px;
   height: 2px;
-  margin-left: -9px;
+  transform: translateX(-50%);
   background: rgba(0, 0, 0, 0.3);
   content: "";
 }
@@ -645,9 +646,6 @@ img {
   gap: 32px;
 }
 
-.range-container {
-  padding-top: 32px;
-}
 
 .btn-reset {
   background-color: transparent;
@@ -861,4 +859,131 @@ img {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+
+/* Range */
+.range {
+  margin-top: 42px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: #6e7576;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #ffffff;
+}
+
+.range-toggle:focus {
+  outline: 3px solid rgba(131, 179, 211, 1);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+  outline: 2px solid rgba(131, 179, 211, 1);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+.range-input {
+  width: calc(50% - 1px);
+  padding: 8px 14px;
+}
+
+.catalog-filter-label {
+  position: absolute;
+}
+
+/* Field */
+.field {
+  margin: 0;
+  padding: 8px 14px;
+  font: inherit;
+  font-weight: 700;
+  border: none;
+}
+
+/* Hover, Focus */
+.field:hover,
+.field:focus {
+  border-color: #af7842;
+}
+
+.field:focus {
+  outline: 2px solid #dbb590;
+}
+
+/* Disabled */
+.field:disabled,
+.field:disabled:hover {
+  color: #595959;
+  background-color: #dbb590;
+  border-color: #595959;
+}
+
+/* Invalid */
+.field:invalid {
+  box-shadow: none;
+}
+
+.field:focus:invalid {
+  border-color: #ea5454;
+}
+
+/* Placeholder */
+.field::placeholder {
+  color: #dbdbdb;
+  opacity: 1;
+}
+
+.range-input {
+  padding: 12px 20px;
+}
+
+.range-min {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-max {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  gap: 2px;
+  max-width: 288px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
