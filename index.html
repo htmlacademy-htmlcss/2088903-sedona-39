@@ -244,25 +244,51 @@
         <section class="modal-content">
           <h2 class="modal-title h2-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group">
-              <label class="arrive" for="arrive">Дата Заезда:</label>
-              <input class="arrive-field modal-field" id="arrive" type="date" name="arrive" placeholder="Дата заезда"
-                value="2020-04-27">
-            </p>
-            <p class="field-group">
-              <label class="departure" for="departure">Дата Выезда:</label>
-              <input class="arrive-field modal-field" id="departure" type="date" name="departure"
-                placeholder="Дата выезда" value="2023-09-01">
-            </p>
+            <div class="field-group">
+              <label class="field-label" for="arrive">Дата Заезда:</label>
+              <div class="field-wrapper">
+                <input class="arrive-field modal-field" id="arrive" type="text" name="arrive" placeholder="Дата заезда"
+                  value="27 апреля 2020">
+                <span class="form-message form-error-message">Мы не можем отправить вас в прошлое.</span>
+              </div>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="departure">Дата Выезда:</label>
+              <div class="field-wrapper">
+                <input class="departure-field modal-field" id="departure" type="text" name="departure"
+                  placeholder="Дата выезда" value="1 сентября 2023">
+                <span class="form-message">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+            </div>
+            <div class="container-flex">
+              <div class="field-group field-guests">
+                <label class="field-label" for="adults">Взрослые:</label>
+                <div class="field-wrapper">
+                  <button class="guests-btn decrease-btn" type="button">
+                    <span class="visually-hidden">Меньше гостей</span>
+                  </button>
+                  <input class="guests-field modal-field" id="adults" type="number" name="adults" placeholder="2"
+                    value="2">
+                  <button class="guests-btn increase-btn" type="button">
+                    <span class="visually-hidden">Меньше гостей</span>
+                  </button>
+                </div>
+              </div>
+              <div class="field-group field-guests">
+                <label class="field-label children-label" for="children">Дети:</label>
+                <div class="field-wrapper">
+                  <button class="guests-btn decrease-btn" type="button">
+                    <span class="visually-hidden">Меньше гостей</span>
+                  </button>
+                  <input class="guests-field modal-field" id="children" type="number" name="children" placeholder="2"
+                    value="2">
+                  <button class="guests-btn increase-btn" type="button">
+                    <span class="visually-hidden">Меньше гостей</span>
+                  </button>
+                </div>
+              </div>
+            </div>
 
-            <p class="field-group field-guests">
-              <label class="adults" for="adults">Взрослые:</label>
-              <input class="adults-field modal-field" id="adults" type="number" name="adults" placeholder="2">
-
-              <label class="children" for="children">Дети:</label>
-              <input class="children-field modal-field" id="children" type="number" name="children" placeholder="2">
-
-            </p>
             <button class="modal-btn btn btn-secondary" type="submit">Найти</button>
           </form>
         </section>
