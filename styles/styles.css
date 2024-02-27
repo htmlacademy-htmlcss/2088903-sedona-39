@@ -681,7 +681,7 @@ img {
 
 .filter {
   display: flex;
-  gap: 30px;
+  gap: 70px;
   margin: 40px 0 0;
 }
 
@@ -1134,7 +1134,7 @@ img {
 /* Control */
 .select-control {
   width: 292px;
-  padding: 14px 20px;
+  padding: 12px 20px;
   padding-right: 48px;
   font: inherit;
   background-color: #ffffff;
