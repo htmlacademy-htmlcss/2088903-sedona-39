@@ -77,12 +77,19 @@ img {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-large {
+  padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .btn-primary{
   background-color: #756157;
 }
-/*************************  */
+
 .btn-primary:hover,
 .btn-primary:focus {
   background-color: #615048;
@@ -123,7 +130,7 @@ img {
 }
 
 .btn:disabled {
-  opacity: 0.3;
+  color: #ffffff;
   background-color: #E5E5E5;
 }
 
@@ -132,16 +139,19 @@ img {
   outline: none;
   cursor: default;
 }
-/*************************  */
 
-
-
-
-.btn-large {
-  padding: 8px 50px;
-  font-size: 20px;
-  line-height: 36px;
+.btn-reset {
+  background-color: transparent;
 }
+
+.btn-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-reset:focus {
+  outline: 3px solid #83B3D3;
+}
+
 
 .h2-title, .h3-title {
   font-weight: 700;
@@ -234,6 +244,7 @@ img {
 
 .nav-user-item {
   display: flex;
+  justify-content: center;
   align-items: center;
   min-width: 44px;
   min-height: 64px;
@@ -776,34 +787,6 @@ img {
 .checkbox-input:focus-visible + .control-mark,
 .radio-input:focus-visible + .control-mark {
   outline: 3px solid #83B3D3;
-}
-
-
-.btn-reset {
-  background-color: transparent;
-}
-
-.btn-reset:hover {
-  opacity: 0.6;
-}
-
-.btn-reset:focus {
-  outline: 3px solid #83B3D3;
-}
-
-.btn:active {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.button:disabled {
-  opacity: 0.3;
-  background-color: #E5E5E5;
-}
-
-.btn:disabled:hover {
-  background-color: #E5E5E5;
-  outline: none;
-  cursor: default;
 }
 
 .field {
