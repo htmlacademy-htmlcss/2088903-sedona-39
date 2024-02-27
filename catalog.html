@@ -79,21 +79,21 @@
                 <ul class="filter-list">
                   <li class="filter-item">
                     <label class="checkbox control">
-                      <input class="checkbox-input visually-hidden" type="checkbox" name="pool" checked>
+                      <input class="checkbox-input visually-hidden" type="checkbox" name="pool" tabindex="0" checked>
                       <span class="checkbox-mark control-mark"></span>
                       <span class="checkbox-label control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="checkbox control">
-                      <input class="checkbox-input visually-hidden" type="checkbox" name="parking" checked>
+                      <input class="checkbox-input visually-hidden" type="checkbox" name="parking" tabindex="0" checked>
                       <span class="checkbox-mark control-mark"></span>
                       <span class="checkbox-label control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="checkbox control">
-                      <input class="checkbox-input visually-hidden" type="checkbox" name="wi-fi">
+                      <input class="checkbox-input visually-hidden" type="checkbox" name="wi-fi" tabindex="0">
                       <span class="checkbox-mark control-mark"></span>
                       <span class="checkbox-label control-label">Wi-Fi</span>
                     </label>
@@ -107,21 +107,23 @@
                   <li class="filter-item">
                     <label class="radio control">
                       <input class="radio-input visually-hidden" type="radio" name="accommodation" value="hotel"
-                        checked>
+                        tabindex="0" checked>
                       <span class="radio-mark control-mark"></span>
                       <span class="radio-label control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="radio control">
-                      <input class="radio-input visually-hidden" type="radio" name="accommodation" value="motel">
+                      <input class="radio-input visually-hidden" type="radio" name="accommodation" value="motel"
+                        tabindex="0">
                       <span class="radio-mark control-mark"></span>
                       <span class="radio-label control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="filter-item">
                     <label class="radio control">
-                      <input class="radio-input visually-hidden" type="radio" name="accommodation" value="apartments">
+                      <input class="radio-input visually-hidden" type="radio" name="accommodation" value="apartments"
+                        tabindex="0">
                       <span class="radio-mark control-mark"></span>
                       <span class="radio-label control-label">Аппартаменты</span>
                     </label>
@@ -133,11 +135,12 @@
                 <div class="range-wrapper-inputs">
                   <div class="container-relative">
                     <label class="catalog-filter-label" for="range-min">от</label>
-                    <input class="range-input range-min" id="range-min" type="number" value="0" name="min-price">
+                    <input class="range-input range-min field" id="range-min" type="number" value="0" name="min-price">
                   </div>
                   <div class="container-relative">
                     <label class="catalog-filter-label" for="range-max">до</label>
-                    <input class="range-input range-max" id="range-max" type="number" value="9000" name="max-price">
+                    <input class="range-input range-max field" id="range-max" type="number" value="9000"
+                      name="max-price">
                   </div>
                 </div>
                 <div class="range">
@@ -206,11 +209,11 @@
                   <p class="product-card-text">Гостиница</p>
                   <p class="product-card-text product-card-price">От 4000 ₽ </p>
                   <a class="product-card-detail btn btn-primary" href="#">Подробнее</a>
-                  <button class="product-card-to-favorite-btn btn btn-secondary">В избранное</button>
+                  <button class="product-card-to-favorite-btn btn btn-secondary" type="button">В избранное</button>
                   <p class="product-card-stars four-stars">
                     <span class="visually-hidden">Гостиница 4 звезды.</span>
                   </p>
-                  <p class="product-card-rating btn" href="#">Рейтинг: 8,5</p>
+                  <p class="product-card-rating btn">Рейтинг: 8,5</p>
                 </div>
               </li>
               <li class="catalog-item">
@@ -225,11 +228,11 @@
                   <p class="product-card-text">Гостиница</p>
                   <p class="product-card-text product-card-price">От 5000 ₽ </p>
                   <a class="product-card-detail btn btn-primary" href="#">Подробнее</a>
-                  <button class="product-card-to-favorite-btn btn btn-success">В избранном</button>
+                  <button class="product-card-to-favorite-btn btn btn-success" type="button">В избранном</button>
                   <p class="product-card-stars four-stars">
                     <span class="visually-hidden">Гостиница 4 звезды.</span>
                   </p>
-                  <p class="product-card-rating btn btn-rating" href="#">Рейтинг: 9,2</p>
+                  <p class="product-card-rating btn btn-rating">Рейтинг: 9,2</p>
                 </div>
               </li>
               <li class="catalog-item">
@@ -244,11 +247,11 @@
                   <p class="product-card-text">Гостиница</p>
                   <p class="product-card-text product-card-price">От 2500 ₽ </p>
                   <a class="product-card-detail btn btn-primary" href="#">Подробнее</a>
-                  <button class="product-card-to-favorite-btn btn btn-secondary">В избранное</button>
+                  <button class="product-card-to-favorite-btn btn btn-secondary" type="button">В избранное</button>
                   <p class="product-card-stars three-stars">
                     <span class="visually-hidden">Гостиница 3 звезды.</span>
                   </p>
-                  <p class="product-card-rating btn btn-rating" href="#">Рейтинг: 6,9</p>
+                  <p class="product-card-rating btn btn-rating">Рейтинг: 6,9</p>
                 </div>
               </li>
               <li class="catalog-item">
@@ -263,11 +266,11 @@
                   <p class="product-card-text">Гостиница</p>
                   <p class="product-card-text product-card-price">От 1500 ₽ </p>
                   <a class="product-card-detail btn btn-primary" href="#">Подробнее</a>
-                  <button class="product-card-to-favorite-btn btn btn-secondary">В избранное</button>
+                  <button class="product-card-to-favorite-btn btn btn-secondary" type="button">В избранное</button>
                   <p class="product-card-stars two-stars">
                     <span class="visually-hidden">Гостиница 2 звезды.</span>
                   </p>
-                  <p class="product-card-rating btn btn-rating" href="#">Рейтинг: 5,0</p>
+                  <p class="product-card-rating btn btn-rating">Рейтинг: 5,0</p>
                 </div>
               </li>
             </ul>
@@ -304,7 +307,7 @@
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Укажите ваш e-mail</label>
-            <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email"
+            <input class="subscribe-input field" type="email" id="subscribe-email" name="subscribe-email"
               placeholder="Ваш e-mail">
             <button class="subscribe-btn btn btn-secondary btn-large" type="submit">Подписаться</button>
           </form>

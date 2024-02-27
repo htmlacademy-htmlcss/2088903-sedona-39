@@ -611,7 +611,7 @@ img {
 /* Filter */
 .header-inner {
   background-image: url("../images/catalog-background.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
   background-color: #ddebf4;
@@ -773,6 +773,12 @@ img {
   content: "";
 }
 
+.checkbox-input:focus-visible + .control-mark,
+.radio-input:focus-visible + .control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+
 .btn-reset {
   background-color: transparent;
 }
@@ -798,6 +804,37 @@ img {
   background-color: #E5E5E5;
   outline: none;
   cursor: default;
+}
+
+.field {
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+  font: inherit;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.field::placeholder {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.field:hover,
+.field:focus {
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #E6E6E6;
+}
+
+.field:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.field::-webkit-outer-spin-button,
+.field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 /* Catalog List */
@@ -1074,19 +1111,11 @@ img {
   width: 100%;
   margin: 0;
   padding: 12px 42px 12px 20px;
-  font: inherit;
-  font-weight: 700;
-  line-height: 24px;
-  border: none;
 }
 
 .range-input:hover,
 .range-input:focus {
-  border-color: #83B3D3;
-}
-
-.range-input:focus {
-  outline: 2px solid #83B3D3;
+  color: #000000;
 }
 
 .range-min {
@@ -1103,12 +1132,6 @@ img {
   gap: 2px;
   max-width: 288px;
   margin: 32px 0 0;
-}
-
-.range-input::-webkit-outer-spin-button,
-.range-input::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
 }
 
 .catalog-filter-label {
@@ -1155,20 +1178,7 @@ img {
 .subscribe-input {
   width: 452px;
   padding: 14px 20px;
-  font: inherit;
-  line-height: 24px;
-  background-color: #F2F2F2;
-  border: none;
   border-radius: 4px 0 0 4px;
-}
-
-.subscribe-input:hover,
-.subscribe-input:focus {
-  border-color: #68A2CA;
-}
-
-.subscribe-input:focus {
-  outline: 2px solid #68A2CA;
 }
 
 /* Modal */
@@ -1201,10 +1211,27 @@ img {
   background-color: #F2F2F2;
   border: none;
   border-radius: 50%;
-  background-image: url("../images/icons/close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
+}
+
+.close-icon {
+  display: block;
+  margin: auto;
+  fill:#000000;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus,
+.modal-close-button:active {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.modal-close-button:active .close-icon {
+  opacity: 0.3;
 }
 
 .modal-title {
@@ -1247,15 +1274,7 @@ img {
 .field-guests .field-wrapper {
   flex-basis: 110px;
   max-width: 110px;
-}
-
-.modal-field {
-  background-color: #F2F2F2;
-  border-radius: 4px;
-  border: none;
-  font: inherit;
-  font-weight: 700;
-  line-height: 24px;
+  min-width: 110px;
 }
 
 .arrive-field,
@@ -1293,10 +1312,6 @@ img {
   margin: 14px 10px;
   background-color: transparent;
   cursor: pointer;
-}
-
-.decrease-btn {
-
 }
 
 .increase-btn {
@@ -1362,12 +1377,6 @@ img {
   display: none;
 }
 
-.modal-field::-webkit-outer-spin-button,
-.modal-field::-webkit-inner-spin-button {
-  appearance: none;
-  margin: 0;
-}
-
 .form-message {
   position: absolute;
   left: 0;
@@ -1380,4 +1389,59 @@ img {
 
 .form-error-message {
   color: #FF5757;
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  margin-left: 10px;
+  width: 26px;
+  height: 26px;
+}
+
+.tooltip-toggle {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.tooltip-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+  width: 256px;
+  margin-top: 15px;
+  padding: 15px 18px 18px 22px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 10px;
+  background-color: #333333;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 9px solid transparent;
+  border-bottom: 9px solid #333333;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }

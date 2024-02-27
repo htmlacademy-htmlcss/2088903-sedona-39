@@ -158,7 +158,7 @@
           </p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Укажите ваш e-mail</label>
-            <input class="subscribe-input" type="email" id="subscribe-email" name="subscribe-email"
+            <input class="subscribe-input field" type="email" id="subscribe-email" name="subscribe-email"
               placeholder="Ваш e-mail">
             <button class="subscribe-btn btn btn-secondary btn-large" type="submit">Подписаться</button>
           </form>
@@ -236,10 +236,15 @@
       </footer>
     </div>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
+          <svg class="close-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" />
+          </svg>
         </button>
         <section class="modal-content">
           <h2 class="modal-title h2-title">Поиск гостиницы в Седоне</h2>
@@ -247,7 +252,7 @@
             <div class="field-group">
               <label class="field-label" for="arrive">Дата Заезда:</label>
               <div class="field-wrapper">
-                <input class="arrive-field modal-field" id="arrive" type="text" name="arrive" placeholder="Дата заезда"
+                <input class="arrive-field field" id="arrive" type="text" name="arrive" placeholder="Дата заезда"
                   value="27 апреля 2020">
                 <span class="form-message form-error-message">Мы не можем отправить вас в прошлое.</span>
               </div>
@@ -255,7 +260,7 @@
             <div class="field-group">
               <label class="field-label" for="departure">Дата Выезда:</label>
               <div class="field-wrapper">
-                <input class="departure-field modal-field" id="departure" type="text" name="departure"
+                <input class="departure-field field" id="departure" type="text" name="departure"
                   placeholder="Дата выезда" value="1 сентября 2023">
                 <span class="form-message">На эти даты есть свободные номера. Пока есть.</span>
               </div>
@@ -267,20 +272,36 @@
                   <button class="guests-btn decrease-btn" type="button">
                     <span class="visually-hidden">Меньше гостей</span>
                   </button>
-                  <input class="guests-field modal-field" id="adults" type="number" name="adults" placeholder="2"
-                    value="2">
+                  <input class="guests-field field" id="adults" type="number" name="adults" placeholder="2" value="2">
                   <button class="guests-btn increase-btn" type="button">
                     <span class="visually-hidden">Меньше гостей</span>
                   </button>
                 </div>
               </div>
               <div class="field-group field-guests">
-                <label class="field-label children-label" for="children">Дети:</label>
+                <span class="field-label children-label">
+                  <label class="field-label" for="children">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z"
+                          fill="white" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                      будут с вами, возраст
+                      которых от 6 до
+                      18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+
                 <div class="field-wrapper">
                   <button class="guests-btn decrease-btn" type="button">
                     <span class="visually-hidden">Меньше гостей</span>
                   </button>
-                  <input class="guests-field modal-field" id="children" type="number" name="children" placeholder="2"
+                  <input class="guests-field field" id="children" type="number" name="children" placeholder="2"
                     value="2">
                   <button class="guests-btn increase-btn" type="button">
                     <span class="visually-hidden">Меньше гостей</span>
