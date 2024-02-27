@@ -40,6 +40,7 @@ body {
   min-height: 100%;
   margin: 0 auto;
   max-width: 1200px;
+  min-width: 1200px;
   background-color: #ffffff;
 }
 
@@ -639,6 +640,7 @@ img {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   gap: 28px;
   margin: 8px 0 0;
   padding: 0;
@@ -855,7 +857,9 @@ img {
 
 .view-modes {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
+  max-width: 280px;
   margin: 0;
   padding: 0;
 }
@@ -981,6 +985,7 @@ img {
 /* Pagination */
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin: 40px 0 0;
   padding: 40px 0 0;
