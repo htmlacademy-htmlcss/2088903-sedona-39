@@ -534,7 +534,7 @@ img {
 
 /* Footer */
 .page-footer {
-  padding: 40px 0 30px;
+  padding: 45px 0 35px;
 }
 
 .social-list {
@@ -700,11 +700,6 @@ img {
   margin-right: auto;
 }
 
-.filter-btn-container {
-  width: 191px;
-  margin-left: 40px;
-}
-
 .filter-title {
   font-size: 20px;
   font-weight: 700;
@@ -724,6 +719,7 @@ img {
   flex-direction: column;
   justify-content: end;
   gap: 32px;
+  width: 191px;
 }
 
 /* Control */
