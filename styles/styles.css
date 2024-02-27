@@ -237,6 +237,7 @@ img {
 
 .nav-user-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -741,6 +742,10 @@ img {
   background-color: #ffffff;
 }
 
+.control-label {
+  line-height: 23px;
+}
+
 .radio-mark.control-mark {
   border-radius: 50%;
 }
@@ -1183,8 +1188,8 @@ img {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 63px;
-  right: 55px;
+  top: 64px;
+  right: 52px;
   width: 52px;
   height: 52px;
   background-color: #F2F2F2;
@@ -1225,6 +1230,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
 }
 
@@ -1400,8 +1406,8 @@ img {
   z-index: 1;
   display: none;
   width: 256px;
-  margin-top: 15px;
-  padding: 15px 18px 18px 22px;
+  margin-top: 13px;
+  padding: 20px 18px 23px 22px;;
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
