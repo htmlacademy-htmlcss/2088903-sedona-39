@@ -356,16 +356,16 @@ img {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.advantages-item:nth-child(even):not(.item-with-img) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 .advantages-item.item-with-img {
   flex-basis: 100%;
   min-width: 100%;
   max-width: 100%;
   color: #ffffff;
   background-color: #82b3d3;
-}
-
-.advantages-item:nth-child(even) {
-  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .item-with-img .h3-title {
@@ -410,7 +410,6 @@ img {
 .advantages-img {
   height: 100%;
   min-width: calc(100% - 400px);
-  object-fit: cover;
 }
 
 .item-reverse {
@@ -537,6 +536,10 @@ img {
 /* Footer */
 .page-footer {
   padding: 45px 0 35px;
+}
+
+.page-footer .container-flex {
+  align-items: center;
 }
 
 .social-list {
@@ -843,6 +846,10 @@ img {
   padding: 0;
 }
 
+.catalog-item {
+  max-width: 340px;
+}
+
 .catalog .btn {
   display: inline-block;
   width: 140px;
@@ -886,21 +893,21 @@ img {
 }
 
 .view-mode-tile {
-  background: url("../images/icons/tile.svg");
+  background-image: url("../images/icons/tile.svg");
   background-size: 16px 14px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .view-mode-single {
-  background: url("../images/icons/single.svg");
+  background-image: url("../images/icons/single.svg");
   background-size: 16px 14px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .view-mode-list {
-  background: url("../images/icons/list.svg");
+  background-image: url("../images/icons/list.svg");
   background-size: 16px 14px;
   background-repeat: no-repeat;
   background-position: center;
@@ -911,17 +918,25 @@ img {
   border: 1px solid #e6e6e6;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 1fr auto auto;
   column-gap: 20px;
   row-gap: 16px;
+  height: 100%;
   border-radius: 4px;
 }
 
-.product-card-title {
+.product-card-title,
+.product-card-text {
   margin: 0;
+  word-break: break-word;
 }
 
 .product-card-title.h3-title {
   text-transform: none;
+}
+
+.product-card-text {
+  align-self: end;
 }
 
 .product-card-img {
@@ -931,10 +946,6 @@ img {
 .product-card-link {
   grid-column: 1 / -1;
   color: #000000;
-}
-
-.product-card-text {
-  margin: 0;
 }
 
 .product-card-price {
