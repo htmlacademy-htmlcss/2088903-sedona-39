@@ -766,14 +766,14 @@ img {
   opacity: 0.3;
 }
 
-.control:has(.checkbox-input:checked)::before {
-  background-image: url("../images/icons/cheched.svg");
+.control:has(.checkbox-input[type="checkbox"]:checked)::before {
+  background-image: url("../images/icons/checked.svg");
   background-size: 13px 11px;
   background-position: 4px center;
   background-repeat: no-repeat;
 }
 
-.control:has(.radio-input:checked)::after {
+.control:has(.radio-input[type="radio"]:checked)::after {
   position: absolute;
   top: 6px;
   left: 5px;
