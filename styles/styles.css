@@ -42,6 +42,7 @@ body {
   max-width: 1200px;
   min-width: 1200px;
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -317,8 +318,9 @@ img {
 
 /* Hero */
 .hero {
-  background-color: #ddebf4;
-  background-image: url("../images/hero-background.jpg");
+  background-color: #253b48;
+  background-image: url("../images/divider.svg"), url("../images/hero-background.jpg");
+  background-position: bottom;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -504,7 +506,7 @@ img {
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #ffffff;
-  background-color: #ddebf4;
+  background-color: #253b48;
 }
 
 .subscribe-index .h2-title {
@@ -632,7 +634,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
-  background-color: #ddebf4;
+  background-color: #253b48;
 }
 
 .header-inner-title {
@@ -960,7 +962,7 @@ img {
 
 .product-card-stars {
   margin: 0;
-  background: url("../images/icons/star.svg");
+  background-image: url("../images/icons/star.svg");
   background-size: 24px 17px;
   background-position-x: left;
   background-position-y: center;
@@ -1199,6 +1201,7 @@ img {
   padding: 64px 70px;
   background-color: #ffffff;
   border-radius: 30px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 .modal-close-button {
