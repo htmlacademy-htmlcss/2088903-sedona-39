@@ -318,7 +318,7 @@ img {
 
 /* Hero */
 .hero {
-  background-color: #253b48;
+  background-color: #c2ccd3;
   background-image: url("../images/divider.svg"), url("../images/hero-background.jpg");
   background-position: bottom;
   background-size: 100% auto;
@@ -506,7 +506,7 @@ img {
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #ffffff;
-  background-color: #253b48;
+  background-color: #96705b;
 }
 
 .subscribe-index .h2-title {
@@ -634,7 +634,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
-  background-color: #253b48;
+  background-color: #96705b;
 }
 
 .header-inner-title {
